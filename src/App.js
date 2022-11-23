@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Bright1 from "./Images/Bright1.jpg";
+import Bright2 from "./Images/Bright2.jpeg";
+import Tomb1 from "./Images/Tomb1.png";
+import Cards from "./Components/Cards";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cards movie="Bright" yearAndAuthor="2017,David Ayer" images={Bright1} />
+      <br/>
+      <Cards
+        movie="125min"
+        yearAndAuthor="2018,Roar Uthaug"
+        images={Bright2}
+      />
+      <br/>
+      <Cards movie="Tomb Raider" yearAndAuthor="2018,Roar Uthaug" images={Tomb1} />
     </div>
   );
 }
